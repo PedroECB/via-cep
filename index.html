@@ -31,39 +31,39 @@
 
 
                 <div class="form-group"><label for="cep">CEP:</label>
-                    <input class="form-control" type="text" id="cep" name="cep" placeholder="Ex: 41000-000">
+                    <input class="form-control" type="text" id="cep" name="cep" placeholder="Ex: 41000-000" maxlength="9" onkeyup="formatCEP();">
                     <small id="cepHelp" class="form-text text-muted">Digite apenas números.</small>
-                    <button type="button" class="btn btn-success btn-block">Buscar</button>
+                    <button id="button" type="button" class="btn btn-success btn-block" disabled>Buscar</button>
                 </div>
                 
                 <div id="result">
                   
                     <div class="form-group">
-                        <label for="logradouro">Logradouro:</label><input class="form-control form-control-sm" type="text" id="logradouro" name="logradouro">
+                        <label for="logradouro">Logradouro:</label><input class="form-control form-control-sm" type="text" id="logradouro" name="logradouro" readonly>
                     </div>
 
                     <div class="form-group">
-                        <label for="complemento">Complemento:</label><input class="form-control form-control-sm" type="text" id="complemento" name="complemento">
+                        <label for="complemento">Complemento:</label><input class="form-control form-control-sm" type="text" id="complemento" name="complemento" readonly>
                     </div>
 
                     <div class="form-group">
-                        <label for="bairro">Bairro:</label><input class="form-control form-control-sm" type="text" id="bairro" name="bairro">
+                        <label for="bairro">Bairro:</label><input class="form-control form-control-sm" type="text" id="bairro" name="bairro" readonly>
                     </div>
 
                      <div class="form-group">
-                        <label for="localidade">Localidade:</label><input class="form-control form-control-sm" type="text" id="localidade" name="localidade">
+                        <label for="localidade">Localidade:</label><input class="form-control form-control-sm" type="text" id="localidade" name="localidade" readonly>
                      </div>
                      
                      <div class="form-group">
-                        <label for="uf">UF:</label><input class="form-control form-control-sm" type="text" id="uf" name="uf">
+                        <label for="uf">UF:</label><input class="form-control form-control-sm" type="text" id="uf" name="uf" readonly>
                      </div>
                      
                      <div class="form-group">
-                        <label for="unidade">Unidade:</label><input class="form-control form-control-sm" type="text" id="unidade" name="unidade">
+                        <label for="unidade">Unidade:</label><input class="form-control form-control-sm" type="text" id="unidade" name="unidade" readonly>
                      </div>
                     
                      <div class="form-group">
-                        <label for="ibge">IBGE:</label><input class="form-control form-control-sm" type="text" id="ibge" name="ibge">
+                        <label for="ibge">IBGE:</label><input class="form-control form-control-sm" type="text" id="ibge" name="ibge" readonly>
                      </div>
 
 
