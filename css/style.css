@@ -10,9 +10,13 @@ h3 {font-weight: bolder;
  
  label{font-weight: bolder;
        margin-bottom: -8px;}
+
+ .btn{box-shadow: none !important;}
  
  #cepHelp{margin-bottom:6px;}
 
  #result .form-group{
     margin:0px;
  }
+
+ #result{display: none;}

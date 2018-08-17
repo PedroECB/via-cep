@@ -31,11 +31,12 @@
 
 
                 <div class="form-group"><label for="cep">CEP:</label>
-                    <input class="form-control" type="text" id="cep" name="cep" placeholder="Ex: 41000-000" maxlength="9" onkeyup="formatCEP();">
+                    <input class="form-control" type="text" id="cep" name="cep" placeholder="Ex: 41000-000" maxlength="9" onkeyup="formatCEP();" autofocus>
                     <small id="cepHelp" class="form-text text-muted">Digite apenas números.</small>
-                    <button id="button" type="button" class="btn btn-success btn-block" disabled>Buscar</button>
+                    <button id="button" type="button" class="no-shadow btn btn-success btn-block" onclick="buscar();" disabled>Buscar</button>
                 </div>
                 
+                <div id="danger"></div>
                 <div id="result">
                   
                     <div class="form-group">
