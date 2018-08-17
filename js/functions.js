@@ -81,25 +81,28 @@ function buscar(){
                       divDanger.appendChild(alert);  
                       divResult.style.display = "none";
                       
-                      return;
+                      return false;
                   }
 
               }
-                console.log(data);
-
-                logradouro.value = data.logradouro;
-                complemento.value = data.complemento;
-                bairro.value = data.bairro;
-                localidade.value = data.localidade;
-                uf.value = data.uf;
-                unidade.value = data.unidade;
-                ibge.value = data.logradouro;
-
-                return;
+             
+              if(!data.erro){   
+                  
+                  console.log(data);
+                  logradouro.value = data.logradouro;
+                  complemento.value = data.complemento;
+                  bairro.value = data.bairro;
+                  localidade.value = data.localidade;
+                  uf.value = data.uf;
+                  unidade.value = data.unidade;
+                  ibge.value = data.logradouro;
+                  divResult.style.display = "block";
+                  return false;
+                }
 
             }
 
-        divResult.style.display = "block";
+        
 
   }
 
